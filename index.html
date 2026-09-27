@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Giga Solutions — CCTV & Storage</title>
+<style>
+:root{
+  --ink:#0e1512; --panel:#131c19; --line:#2a3a34;
+  --amber:#e8a33d; --text:#eef3f0; --muted:#9fb0a9;
+  box-sizing:border-box;
+}
+*{box-sizing:inherit;margin:0;padding:0}
+body{
+  background:var(--ink); color:var(--text);
+  font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  line-height:1.5;
+}
+header{
+  position:sticky; top:0; padding:18px 6vw; padding-top:calc(18px + env(safe-area-inset-top,0px));
+  display:flex; justify-content:space-between; align-items:center;
+  background:rgba(14,21,18,.92); border-bottom:1px solid var(--line); backdrop-filter:blur(6px);
+  z-index:10;
+}
+.logo{font-size:1.3rem; font-weight:700; letter-spacing:.02em}
+.logo span{color:var(--amber)}
+nav a{color:var(--muted); text-decoration:none; margin-left:28px; font-size:.95rem}
+nav a:hover{color:var(--text)}
+.hero{
+  padding:14vh 6vw 10vh; max-width:780px;
+  border-bottom:1px solid var(--line);
+}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem); font-weight:700; line-height:1.15; letter-spacing:-.01em}
+.hero p{color:var(--muted); font-size:1.15rem; margin-top:18px; max-width:60ch}
+.hero .cta{margin-top:34px; display:flex; gap:16px; flex-wrap:wrap}
+.btn{
+  padding:13px 26px; border-radius:4px; text-decoration:none; font-weight:600; font-size:.95rem;
+  border:1px solid var(--amber);
+}
+.btn.solid{background:var(--amber); color:#1a1204}
+.btn.ghost{color:var(--amber)}
+section{padding:9vh 6vw; border-bottom:1px solid var(--line)}
+h2{font-size:1.7rem; margin-bottom:8px}
+.sub{color:var(--muted); margin-bottom:44px; max-width:60ch}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1px; background:var(--line)}
+.card{background:var(--panel); padding:28px}
+.card .tag{color:var(--amber); font-size:.8rem; font-weight:600}
+.card h3{margin:10px 0 8px; font-size:1.15rem}
+.card p{color:var(--muted); font-size:.92rem}
+.contact{display:flex; gap:60px; flex-wrap:wrap}
+.contact div{min-width:200px}
+.contact h3{font-size:.85rem; color:var(--muted); text-transform:none; margin-bottom:6px}
+.contact p, .contact a{color:var(--text); text-decoration:none; font-size:1.05rem}
+.wa{
+  display:inline-flex; align-items:center; gap:10px; margin-top:6px;
+  background:#25d366; color:#06210f; padding:11px 20px; border-radius:4px; font-weight:600; text-decoration:none;
+}
+footer{padding:26px 6vw; color:var(--muted); font-size:.85rem; text-align:center}
+@media (max-width:640px){nav a{margin-left:16px; font-size:.85rem} .contact{gap:34px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">GIGA<span>SOLUTIONS</span></div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Storage and surveillance, sorted properly.</h1>
+  <p>Giga Solutions supplies CCTV cameras, surveillance-grade hard disks, and the rest of the kit that keeps your footage recording and your premises watched.</p>
+  <div class="cta">
+    <a class="btn solid" href="#products">See products</a>
+    <a class="btn ghost" href="https://wa.me/254746300088" target="_blank">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Products</h2>
+  <p class="sub">Hard disks move the most — here's the full range.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Top seller</div>
+      <h3>Surveillance hard disks</h3>
+      <p>1TB–8TB drives built for 24/7 DVR/NVR recording. Purple and standard options in stock.</p>
+    </div>
+    <div class="card">
+      <h3>CCTV cameras</h3>
+      <p>Dome, bullet, and PTZ cameras for indoor and outdoor coverage, day and night vision.</p>
+    </div>
+    <div class="card">
+      <h3>DVR / NVR units</h3>
+      <p>4, 8, and 16-channel recorders compatible with our camera and disk range.</p>
+    </div>
+    <div class="card">
+      <h3>Cables & accessories</h3>
+      <p>Power supplies, connectors, and cabling for clean, reliable installs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Giga Solutions</h2>
+  <p class="sub">We supply CCTV equipment and the storage that keeps it running — for homes, shops, and offices that need reliable, always-on surveillance.</p>
+</section>
+
+<section id="contact">
+  <h2>Get in touch</h2>
+  <div class="contact">
+    <div>
+      <h3>Phone</h3>
+      <p>0746 300 088</p>
+    </div>
+    <div>
+      <h3>Location</h3>
+      <p>White Angle House, 1st Flr, Shop 62<br>Kenneth Matiba Rd, Nairobi</p>
+    </div>
+    <div>
+      <h3>WhatsApp</h3>
+      <a class="wa" href="https://wa.me/254746300088" target="_blank">Message us</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Giga Solutions. All rights reserved.</footer>
+
+</body>
+</html>
